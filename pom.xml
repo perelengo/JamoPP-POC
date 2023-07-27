@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.perelengo.reverse</groupId>
+  <artifactId>jamopp-test</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+      <maven.compiler.source>1.17</maven.compiler.source>
+      <maven.compiler.target>1.17</maven.compiler.target>
+  </properties>
+  
+  
+  <dependencies>
+  <dependency>
+    <groupId>org.palladiosimulator.jdt</groupId>
+  	<artifactId>jamopp.parser.jdt.singlefile</artifactId>
+  	<version>5.1.0-SNAPSHOT</version>
+  	<type>eclipse-plugin</type>
+  </dependency>
+  <dependency>
+    <groupId>org.palladiosimulator.jdt</groupId>
+  	<artifactId>jamopp.parser</artifactId>
+ 	 <version>5.1.0-SNAPSHOT</version>
+ 	 <type>eclipse-plugin</type>
+  </dependency>
+    <dependency>
+    <groupId>org.palladiosimulator.jdt</groupId>
+  	<artifactId>org.emftext.language.java</artifactId>
+ 	 <version>5.1.0-SNAPSHOT</version>
+ 	 <type>eclipse-plugin</type>
+  </dependency>
+    <dependency>
+    <groupId>org.palladiosimulator.jdt</groupId>
+  	<artifactId>jamopp.resource</artifactId>
+ 	 <version>5.1.0-SNAPSHOT</version>
+ 	 <type>eclipse-plugin</type>
+  </dependency>
+    <dependency>
+    <groupId>org.palladiosimulator.jdt</groupId>
+  	<artifactId>jamopp.resolution</artifactId>
+ 	 <version>5.1.0-SNAPSHOT</version>
+ 	 <type>eclipse-plugin</type>
+  </dependency>
+    <dependency>
+  <groupId>org.eclipse.jdt</groupId>
+  <artifactId>org.eclipse.jdt.core</artifactId>
+  <version>3.34.0</version>
+</dependency>	
+ </dependencies>
+  <!-- for java 11 
+		<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.osgi</artifactId><version>3.11.3</version><optional>true</optional></dependency>
+		<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.equinox.common</artifactId><version>3.8.0</version><optional>true</optional></dependency>
+		<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.core.commands</artifactId><version>3.8.1</version><optional>true</optional></dependency>
+		<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.core.contenttype</artifactId><version>3.5.100</version><optional>true</optional></dependency>
+		<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.equinox.preferences</artifactId><version>3.6.1</version><optional>true</optional></dependency>
+		<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.equinox.registry</artifactId><version>3.6.100</version><optional>true</optional></dependency>
+		<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.core.expressions</artifactId><version>3.5.100</version><optional>true</optional></dependency>
+		<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.core.runtime</artifactId><version>3.12.0</version><optional>true</optional></dependency>
+		<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.core.filesystem</artifactId><version>1.6.1</version><optional>true</optional></dependency>
+		<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.core.jobs</artifactId><version>3.8.0</version><optional>true</optional></dependency>
+		<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.core.resources</artifactId><version>3.11.1</version><optional>true</optional></dependency>
+		<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.equinox.app</artifactId><version>1.3.400</version><optional>true</optional></dependency>
+		<dependency><groupId>org.eclipse.jdt</groupId><artifactId>org.eclipse.jdt.core</artifactId><version>3.25.0</version><optional>true</optional></dependency>
+		<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.text</artifactId><version>3.6.0</version><optional>true</optional></dependency>
+    </dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.osgi</artifactId><version>3.11.3</version><optional>true</optional></dependency>
+			<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.equinox.common</artifactId><version>3.8.0</version><optional>true</optional></dependency>
+			<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.core.commands</artifactId><version>3.8.1</version><optional>true</optional></dependency>
+			<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.core.contenttype</artifactId><version>3.5.100</version><optional>true</optional></dependency>
+			<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.equinox.preferences</artifactId><version>3.6.1</version><optional>true</optional></dependency>
+			<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.equinox.registry</artifactId><version>3.6.100</version><optional>true</optional></dependency>
+			<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.core.expressions</artifactId><version>3.5.100</version><optional>true</optional></dependency>
+			<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.core.runtime</artifactId><version>3.12.0</version><optional>true</optional></dependency>
+			<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.core.filesystem</artifactId><version>1.6.1</version><optional>true</optional></dependency>
+			<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.core.jobs</artifactId><version>3.8.0</version><optional>true</optional></dependency>
+			<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.core.resources</artifactId><version>3.11.1</version><optional>true</optional></dependency>
+			<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.equinox.app</artifactId><version>1.3.400</version><optional>true</optional></dependency>
+			<dependency><groupId>org.eclipse.jdt</groupId><artifactId>org.eclipse.jdt.core</artifactId><version>3.27.0</version><optional>true</optional></dependency>
+			<dependency><groupId>org.eclipse.platform</groupId><artifactId>org.eclipse.text</artifactId><version>3.6.0</version><optional>true</optional></dependency>
+		</dependencies>
+	</dependencyManagement>
+END of java 11
+-->
+</project>
